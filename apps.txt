@@ -1,0 +1,5 @@
+ar-naming.herokuapp.com
+diagnostics.herokuapp.com
+launchvotes.herokuapp.com
+mbta-cr.herokuapp.com
+seizure-roulette.herokuapp.com
