@@ -1,0 +1,20 @@
+## systemd service
+# /etc/systemd/system/no-sleep-for-heroku.service
+# Note: This has not been tested.
+
+[Unit]
+Description=No Sleep For Heroku
+After=syslog.target
+After=network.target
+
+[Service]
+Type=simple
+User=no-sleep
+Group=no-sleep
+ExecStart=/bin/ruby /path/to/no_sleep.rb
+
+# Give a reasonable amount of time for the server to start up/shut down
+TimeoutSec=300
+
+[Install]
+WantedBy=multi-user.target
